@@ -50,7 +50,9 @@ app.use(multer(storage).single('image'));
 
 
 //RUTAS
-app.use(require('./routes'));
+app.use(require('./routes/index'));
+app.use(require('./routes/ventas'));
+app.use(require('./routes/inventario'));
 
 
 
