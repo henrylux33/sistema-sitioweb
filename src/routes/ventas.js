@@ -6,4 +6,5 @@ router.get('/ventas/agregar', (req, res) => {
     
 });
 
+
 module.exports = router;
