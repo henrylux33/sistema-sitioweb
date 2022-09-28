@@ -1,0 +1,195 @@
+h1{
+    color: #09322C;
+    text-align: center;
+}
+h2{
+    color:#09322C;
+}
+#subtitulo{
+    color:#09322C;
+    text-align: center;
+    font-size: 165%;
+}
+body{
+    background-image: url(/img/fondonosotros.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: #09322C;
+}
+
+header{
+    display: flex;
+    height: 70px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 85px;
+    margin-right: 180px;
+    margin-left: 70px;  
+}
+.carrito{
+    display: flex;
+    align-items: center;
+}
+.carrito img{
+    height: 55px;
+    margin-left: -150px;
+}
+.admin{
+    display: flex;
+    align-items: center;
+}
+.admin img{
+    height: 55px;
+    margin-left: -130px;
+    margin-right: 130px;
+}
+.whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whatsapp img{
+    display: flex;
+    height: 60px;
+    margin-right: -15em;
+    margin-left: 15em;
+}
+.email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 3em;
+}
+.email img{
+    display: flex;
+    height: 60px;
+    margin-right: -15em;
+    margin-left: 15em;
+}
+.logonosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+.logonosotros img{
+    height: 200px;
+    display: flex;
+}
+.imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.local{
+    display: flex;
+    height: 600px;
+    margin-right: 2em;
+    margin-block-end: 5em;
+}
+.local2{
+    display: flex;
+    height: 600px;
+    margin-block-end: 5em;
+
+}
+nav a{
+    font-weight: 600;
+    padding-right: 100px;
+    font-size: 125%;
+}
+nav a:hover{
+    color:black;
+}
+#contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+#correo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+p{
+    color: #09322C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 12em;
+    margin-right: 12em;
+    justify-content: center;
+    align-items: center;
+    font-size: 170%;
+    line-height: 40px;
+}
+
+/*Inicio de footer*/
+
+footer{
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9D9D9;
+    background-image: url(/img/Footer.png);
+    background-size:contain;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 150px;
+    padding: 15px;
+    margin-top: -5px;
+}
+
+footer .enlaces a{
+    font-weight: 400;
+    padding-left: 100px;
+    padding-right: 15px;
+    font-size: 125%;
+
+}
+footer .box{
+    margin-top: -20px;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+footer .box h1{
+    font-weight: 400;
+    padding-right: 100px;
+    font-size: 125%;
+    color: #09322C;
+
+}
+footer .box .redessociales{
+    justify-content: center;
+    align-items: center;
+}
+
+footer .box .redessociales img{
+    width: 30px;
+    margin-right: 45px;
+}
+/*Fin de footer*/
