@@ -9,11 +9,15 @@ router.get('/ventas/agregar1', (req, res) => {
 
 router.post('/ventas/agregar', async (req, res) => {
     const ventas = Ventas(req.body);
-    
-    const vguardado = await ventas.save();
-    console.log(vguardado);
-    
-    res.send('Guardado')
+    await ventas.save();
+    res.redirect('/ventas/agregar1');
 })
+
+router.get('/ventas/ver-ventas', async (req, res) => {
+    const ver = await Ventas.find().lean();
+   
+    res.render('VENTAS/verventas', { ver: ver });
+    
+});
 
 module.exports = router;
