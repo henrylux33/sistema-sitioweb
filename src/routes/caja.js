@@ -12,7 +12,7 @@ router.post('/caja/agregar', async (req, res) => {
     
     const vguardado = await caja.save();
     console.log(vguardado);
-    
+
     res.send('Guardado')
 })
 
