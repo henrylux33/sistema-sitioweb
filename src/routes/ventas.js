@@ -20,4 +20,23 @@ router.get('/ventas/ver-ventas', async (req, res) => {
     
 });
 
+router.get('/ventas/editar/:id', async (req, res) => {
+    try {
+        const ventas = await Ventas.findById(req.params.id).lean();
+    
+    res.render('VENTAS/ventas-editar', { ventas: ventas });
+    }
+    catch (error) {
+        console.log(error.message);
+    }
+    
+});
+
+router.post('/ventas/editar/:id', async (req, res) => {
+    const { id } = req.params;
+    await Ventas.findByIdAndUpdate(id, req.body);
+
+    res.redirect('/ventas/ver-ventas')
+});
+
 module.exports = router;
