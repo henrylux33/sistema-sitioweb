@@ -1,10 +1,6 @@
 const { Schema, model } = require('mongoose');
 
 const ventas = new Schema({
-    fecha: {
-        type: Date,
-        dafaault: new Date()
-    },
     nombreCliente: String,
     nit: Number,
     telefono: Number,
@@ -13,9 +9,14 @@ const ventas = new Schema({
     bebida: String,
     postre: String,
     tipo_pago: String,
-    empleado: String,
+    empleado: String
+    },
+    {
+        timestamps: true,
+        versionkey: false
+    }
 
-});
+);
 
 module.exports = model('Ventas', ventas);
 
