@@ -15,7 +15,6 @@ const ventas = new Schema({
         timestamps: true,
         versionkey: false
     }
-
 );
 
 module.exports = model('Ventas', ventas);
