@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+<body>
+    <form action="/ventas/agregar" method="POST">
+        <div class="grupo-ventas">
+            <label for="">Nombre</label>
+            <input type="text" class="grupo-ventas" name="nombreCliente" placeholder="Cliente">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Telefono</label>
+            <input type="number" class="grupo-ventas" name="telefono" placeholder="Telefono">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">NIT</label>
+            <input type="number" class="grupo-ventas" name="nit" placeholder="NIT">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Forma de pago</label>
+            {{!-- <input type="text" class="grupo-ventas" name="tipo_pago" placeholder="Forma de pago"> --}} 
+            <select name="tipo_pago">
+                <option>Efectivo</option>
+                <option>Tarjeta</option>
+              
+            </select>
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Empleado</label>
+            <input type="text" class="grupo-ventas" name="empleado" placeholder="Nombre">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Platillo de entrada</label>
+            <input type="text" class="grupo-ventas" name="entrada" placeholder="Platillo">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Plato Fuerte</label>
+            <input type="text" class="grupo-ventas" name="platillo" placeholder="Platillo">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Bebida</label>
+            <input type="text" class="grupo-ventas" name="bebida" placeholder="Bebida">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Postre</label>
+            <input type="text" class="grupo-ventas" name="postre" placeholder="Postre">
+        </div>
+        <button>agregar</button>
+    </form>
+    
+    
+    <a type="button" href="/ventas/ver-ventas"><button>Ver</button></a>
+    
+</body>
+</html>

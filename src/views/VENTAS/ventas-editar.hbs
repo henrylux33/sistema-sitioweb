@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/ventas/editar/{{ventas._id}}" method="POST">
+        <div class="grupo-ventas">
+            <label for="">Nombre</label>
+            <input type="text" class="grupo-ventas" name="nombreCliente" placeholder="Cliente" value="{{ventas.nombreCliente}}">
+        </div>
+
+        <div class="grupo-ventas">
+            <label for="">Telefono</label>
+            <input type="number" class="grupo-ventas" name="telefono" placeholder="Telefono" value="{{ventas.telefono}}">
+        </div>
+
+        <div class="grupo-ventas">
+            <label for="">NIT</label>
+            <input type="number" class="grupo-ventas" name="nit" placeholder="NIT" value="{{ventas.nit}}">
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Forma de pago</label>
+            {{!-- <input type="text" class="grupo-ventas" name="tipo_pago" placeholder="Forma de pago"> --}} 
+            <select name="tipo_pago" value="{{ventas.tipo_pago}}">
+                <option>Efectivo</option>
+                <option>Tarjeta</option>
+              
+            </select>
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Empleado</label>
+            <input type="text" class="grupo-ventas" name="empleado" placeholder="Nombre" value="{{ventas.empleado}}">
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Platillo de entrada</label>
+            <input type="text" class="grupo-ventas" name="entrada" placeholder="Platillo" value="{{ventas.entrada}}">
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Plato Fuerte</label>
+            <input type="text" class="grupo-ventas" name="platillo" placeholder="Platillo" value="{{ventas.platillo}}">
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Bebida</label>
+            <input type="text" class="grupo-ventas" name="bebida" placeholder="Bebida" value="{{ventas.bebida}}">
+        </div>
+        
+        <div class="grupo-ventas">
+            <label for="">Postre</label>
+            <input type="text" class="grupo-ventas" name="postre" placeholder="Postre" value="{{ventas.postre}}">
+        </div>
+        
+        <button>Editar</button>
+    </form>
+</body>
+</html>
