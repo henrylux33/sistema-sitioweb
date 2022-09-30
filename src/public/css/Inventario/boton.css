@@ -1,0 +1,19 @@
+.contedorbotones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40 px;
+}
+
+.bot{
+    display: block;
+    width: 50px;
+    font: url('Nunito-Regular.ttf');
+    font-weight: 700;
+    background-color: #F2D390;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin:100px 100;
+    color: #195850;
+    text-decoration: nome;
+}

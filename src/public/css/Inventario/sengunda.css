@@ -1,0 +1,38 @@
+body {
+    background-color: #fdfdfd;
+    font-family: "Helvetica Neue";
+    font-size: 15px;
+    color: #195850;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0px 5px;
+
+}
+table th {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 1.5px solid #42C9BA;
+ 
+  }
+  th:first-child {
+    border-radius: 10px 0 0 10px;
+  }
+  th:last-child {
+    border-radius: 0 10px 10px 0;
+  }
+tr td {
+  padding: 3px 20px;
+  border: 1.5px solid #42C9BA;
+}
+
+tr td:first-of-type {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+tr td:last-of-type {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
