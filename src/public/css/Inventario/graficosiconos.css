@@ -1,0 +1,465 @@
+body{
+    margin:0px;
+    font-size: 15px;
+    font-family: 'Nunito';
+    src: url('Nunito-Regular.ttf');
+    font-style: normal;
+    color: #195850;
+}
+.barra ul{
+    /*solucionar espacios no deseados*/  
+    padding:8px;
+    text-align: center;
+}
+
+.l-log{
+    width: 150px;
+    padding-top: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.barra a{
+    text-decoration: none;
+    font-weight: normal;
+    /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+    transition: .4s all ;
+}
+
+
+
+.barra{
+    /*Tamaño cuando el cursor señale la barra*/
+    width: 15%;
+    height: 100%;
+    background: #F0EADC;
+    position: fixed;
+}
+.barra a{ 
+    font-size:15px ;
+    color:#195850;
+    /*Se usa el display block para que el enlace respete el margin*/
+    text-align: left;
+    padding:15px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.d-logo img{
+  align-items: left;
+  width: 40px;
+  padding-right: 15px;
+}
+
+.barra:hover a:hover{ 
+    font-size: 20px;
+    padding: 15px 0px; 
+    background: #F2D390;
+    border-radius: 10px;
+}
+/*
+@media (max-width: 200px){
+    .barra:hover{
+    width: 25%;
+    }
+}
+
+@media (min-width: 200px){
+    .barra:hover{
+    width: 25%;
+    }
+}
+*/
+
+  .wrapper {
+    width: 100%;
+    margin: auto;
+ 
+  }
+
+  .m-superior {
+    background: #F0EADC;
+    width: 85%;
+    height: 18%;
+    position: fixed;
+    margin-left: 15%;
+    z-index: 10;
+    
+  }
+  
+  nav {
+    float: center; /* Desplazamos el nav hacia la izquierda */
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; /* Limpiamos errores de float */
+  }
+  .nav-sup ul li {
+    float: right;
+    font-family: Arial, sans-serif;
+    
+  }
+  .nav-sup ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 30px;
+    color: #195850;
+    text-decoration: none;
+  }
+  
+  nav:hover a:hover{ 
+    font-size: 15px;
+    background: #F2D390;
+    border-radius: 5px;
+
+  }
+  .le-ant{
+    font-size: 25px;
+    float: left;
+    margin-top: 25px;
+    font-weight: bold;
+
+  }
+ 
+
+
+  
+
+    /** CONTENIDO ********************************/
+ 
+  .contenido {
+    width: 84.8%;
+
+    /*background-color: #752ed3;*/
+    position: absolute;
+
+    top: 18.2%;
+    left: 15.1%;
+  }
+
+
+  /** ACCESOS DIRECTOS ********************************/
+  .d-titulo{
+    font-size: 32px;
+    color: #09322C;
+    margin-top: 3%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .contenedor{
+    width: 70vw;
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    
+}
+  .directos{
+    height: 25rem;
+    width: 40rem;
+    /*background-color: #91876e;
+    border: #0b0c0c solid 2px;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+
+  }
+
+  .d-ingresos{
+    height: 10rem;
+    width: 10rem;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #FEEFC8;
+    border-radius: 15px;
+    margin-bottom: 0px;
+ 
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    
+
+  }
+
+  .b-img{
+    width: 6.5rem;
+    /*background-color: #282c29;*/
+    height: 7rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .b-directo{
+    padding: 10px;
+    width: 120px;
+    height: 100px;
+  }
+
+  .b-tit{
+    position:static;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+
+  .directos:hover .d-ingresos:hover{ 
+    font-size: 14px;
+    background: #F2D390;
+    border-radius: 15px;
+
+  }
+ 
+
+
+
+
+
+
+  @media (max-width: 1024px){
+    body{
+      /*background-color: red;*/
+      
+      width: 100%;
+      margin: 0%;
+      
+    }
+    .d-titulo{
+     
+      font-size: 20px;
+}
+ /*************************************************+++++++++++++++++++++++++++++++++*/
+
+   /*************************************************+++++++++++++++++++++++++++++++++*/
+   .barra {
+   
+    /**Alto y ancho de donde se va a activar cuando pase el mouse**/
+    width:0%;
+    height: 0%;
+    /*Para que este siempre en la misma parte de la pantalla aunque se haga scroll*/
+    position:fixed;
+    /*Tiempo en el que va a transitar la animacion*/
+    transition: .4s all ;
+    /*este arriba de todo en la pantalla*/
+    z-index: 1;  
+}
+
+.barra ul{
+    /*solucionar espacios no deseados*/
+    padding:1px;
+    text-align: center;
+
+
+        
+}
+.barra  li{
+    /*Velocidad de transicion del contenido*/
+    transition:all .3s;
+    list-style: none; 
+}
+
+.barra a{
+    
+    text-decoration: none;
+    font-weight: normal;
+    font-size:15px ;
+    color:#195850;
+    /*Se usa el display block para que el enlace respete el margin*/
+    padding: 15px;
+    
+    /*La letra crece con el menu de esta manera no se va a ver como se ajusta al margen mientras crece*/
+    transition: .3s all ;
+    /*Se ocultan los elementos*/
+    font-size: 0px;
+    padding:0px;
+   
+       
+}
+
+
+.d-logo img{
+  align-items: left;
+  width: 40px;
+  padding-right: 15px;
+  margin-top: 5PX;
+}
+
+
+
+.barra  .l-log{
+    text-align: center;
+
+    padding:10px;
+    padding-bottom:7px;
+
+  
+}
+
+
+
+.barra:hover{
+    /*Tamaño cuando el cursor señale la barra*/
+    width: 18%;
+    height: 100%;
+    
+    /*Color*/
+
+    background-color: #FEEFC890;
+   
+}
+
+.barra:hover a{ 
+    font-size:15px ;
+
+    /*Se usa el display block para que el enlace respete el margin*/
+    display: block;
+    text-align: left;
+    padding:10px;
+}
+
+/*
+.barra:hover .l-log{*/
+    /*Desaparecer la imagen*/
+   /* height:0px;*/
+/*}*/
+
+
+
+
+.barra:hover a:hover{ 
+    font-size: 15px;
+    padding: 20px 0px; 
+    background: #F2D390;
+    
+}
+
+   /*************************************************+++++++++++++++++++++++++++++++++*/
+
+    .m-superior {
+      background: #ffffff90;
+      width: 82%;
+      position: fixed;
+      right: 0%;
+      z-index: 5px;
+    }
+
+
+ 
+ 
+
+    nav ul li a {
+      display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+      padding: 20px;
+     
+    }
+
+    .contenido {
+      left: 0%;
+      margin: 0%;
+      width: 100%;
+    }
+    
+
+
+  }
+
+  @media (max-width: 720px){
+
+    .barra:hover{
+      /*Tamaño cuando el cursor señale la barra*/
+      width: 30%;
+      height: 100%;
+      
+      /*Color*/
+  
+      background-color: #FEEFC890;
+     
+  }
+
+  /**++++++++++++++++++++++++++++++++contenido*/
+  .m-superior {
+    background: #ffffff90;
+    width: 75%;
+    height: 15%;
+    position: fixed;
+    margin-left: 15%;
+    z-index: 10;
+    
+  }
+
+  .nav-sup ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #195850;
+    text-decoration: none;
+  }
+  .le-ant{
+    font-size: 15px;
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+
+  }
+
+  .contenido {
+    left: 0%;
+    margin: 0%;
+    width: 100%;
+  }  
+    /**++++++++++++++++++++++++++++++++contenido*/
+    .barra  .l-log{
+      text-align: center;
+  
+      padding:0px;
+      padding-bottom:1px;
+      height: 88px;    
+  }
+    nav:hover a:hover{ 
+    font-size: 12px;
+    background: #F2D390;
+    border-radius: 5px;
+
+  }
+
+  .d-titulo{
+    font-size: 18px;
+    margin-top: 0%;
+  
+  }
+
+    .directos{
+      
+      width: 40vw;
+      height: 120vw;
+      margin: 0px;
+     /* background-color: #91876e;*/
+      display: flex;     
+      flex-direction: row;
+     justify-content: center;
+      align-items: center;
+  
+    }
+
+    .d-ingresos{
+      height: 10rem;
+      width: 10rem;
+      background-color: #FEEFC8;
+      border-radius: 15px;
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+}
+
+
+  
