@@ -51,37 +51,81 @@
         </div>
 
         <div class="grupo-ventas">
-            <label for="">Postre</label>
-            <input type="number" class="monto" name="precio" placeholder="precio" onchange="sumar();">
+            <label for="">Entrada</label>
+            <input type="number" class="monto" name="precioentrada" placeholder="precio" onchange="enmulti();">
         </div>
         <div class="grupo-ventas">
-            <label for="">Postre</label>
-            <input type="number" class="monto" name="cantidad" placeholder="Cantidad" onchange="sumar();">
-        </div>
-        <div class="grupo-ventas">
-            {{!-- <label for="">Postre</label>
-            <input type="number" class="monto" name="total" placeholder="Total" onchange="sumar();"> --}}
-            <span>TOTAL </span>
-                <input type="number" id="total" name="total" value="0" readonly/>
+            <label for="">Entrada</label>
+            <input type="number" class="monto " name="cantidadentrada" placeholder="Cantidad" onchange="enmulti(); ;">
         </div>
 
+        <div class="grupo-ventas">
+            <label for="">Almuerzo</label>
+            <input type="number" class="monto1" name="precioalmuerzo" placeholder="precio" onchange="almulti();">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Almuerzo</label>
+            <input type="number" class="monto1 " name="cantidadalmuerzo" placeholder="Cantidad" onchange="almulti()">
+        </div>
+
+        <div class="grupo-ventas">
+            
+            <span>TOTAL suma </span>
+                <input type="number" id="total" name="total"  readonly/>
+        </div>
+
+         <div class="grupo-ventas">
+            
+            <span>TOTAL multi Entrada </span>
+                <input type="number" id="Costo" value="0" class="total2" onchange="sumar()" / >
+        </div>
+
+         <div class="grupo-ventas">
+            
+            <span>TOTAL multi Almuerzo </span>
+                <input type="number" id="Costo1" value="0" class="total2" onchange="sumar()" />
+        </div>
         <button>agregar</button>
     </form>
     
     <a type="button" href="/ventas/ver-ventas"><button>Ver</button></a>
 
     <script>
-           function sumar()
-{
-  const $total = document.getElementById('total');
-  let subtotal = 0;
-  [ ...document.getElementsByClassName( "monto" ) ].forEach( function ( element ) {
-    if(element.value !== '') {
-      subtotal += parseFloat(element.value);
-    }
-  });
-  $total.value = subtotal;
-}
+        function sumar()
+            {
+            const $total = document.getElementById('total');
+            let subtotal = 0;
+            [ ...document.getElementsByClassName( "total2" ) ].forEach( function ( element ) {
+                if(element.value !== '') {
+                subtotal += parseFloat(element.value);
+                }
+            });
+            $total.value = subtotal;
+            }
+
+        function enmulti()
+            {
+            const $total = document.getElementById('Costo');
+            let subtotal = 1;
+            [ ...document.getElementsByClassName( "monto" ) ].forEach( function ( element ) {
+                if(element.value !== '') {
+                subtotal *= parseFloat(element.value);
+                }
+            });
+            $total.value = subtotal;
+            }
+        
+        function almulti()
+            {
+            const $total = document.getElementById('Costo1');
+            let subtotal = 1;
+            [ ...document.getElementsByClassName( "monto1" ) ].forEach( function ( element ) {
+                if(element.value !== '') {
+                subtotal *= parseFloat(element.value);
+                }
+            });
+            $total.value = subtotal;
+            }
     </script> 
 
     
