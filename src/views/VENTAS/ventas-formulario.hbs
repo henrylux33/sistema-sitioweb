@@ -49,11 +49,41 @@
             <label for="">Postre</label>
             <input type="text" class="grupo-ventas" name="postre" placeholder="Postre">
         </div>
+
+        <div class="grupo-ventas">
+            <label for="">Postre</label>
+            <input type="number" class="monto" name="precio" placeholder="precio" onchange="sumar();">
+        </div>
+        <div class="grupo-ventas">
+            <label for="">Postre</label>
+            <input type="number" class="monto" name="cantidad" placeholder="Cantidad" onchange="sumar();">
+        </div>
+        <div class="grupo-ventas">
+            {{!-- <label for="">Postre</label>
+            <input type="number" class="monto" name="total" placeholder="Total" onchange="sumar();"> --}}
+            <span>TOTAL </span>
+                <input type="number" id="total" name="total" value="0" readonly/>
+        </div>
+
         <button>agregar</button>
     </form>
     
-    
     <a type="button" href="/ventas/ver-ventas"><button>Ver</button></a>
+
+    <script>
+           function sumar()
+{
+  const $total = document.getElementById('total');
+  let subtotal = 0;
+  [ ...document.getElementsByClassName( "monto" ) ].forEach( function ( element ) {
+    if(element.value !== '') {
+      subtotal += parseFloat(element.value);
+    }
+  });
+  $total.value = subtotal;
+}
+    </script> 
+
     
 </body>
 </html>
