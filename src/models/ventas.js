@@ -10,8 +10,13 @@ const ventas = new Schema({
     postre: String,
     tipo_pago: String,
     empleado: String,
-    precio: String,
-    cantidad: String,
+
+    precioentrada: String,
+    cantidadentrada: String,
+
+    precioalmuerzo: String,
+    cantidadalmuerzo: String,
+
     total:String
     },
     {
