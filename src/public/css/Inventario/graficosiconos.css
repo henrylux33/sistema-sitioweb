@@ -423,10 +423,7 @@ body{
       padding-bottom:1px;
       height: 88px;    
   }
-  .logo-1{
-
-  }
-  nav:hover a:hover{ 
+    nav:hover a:hover{ 
     font-size: 12px;
     background: #F2D390;
     border-radius: 5px;
